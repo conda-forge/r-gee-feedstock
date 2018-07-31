@@ -14,14 +14,16 @@ Summary: Generalized Estimation Equation solver.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-gee-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-gee-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-gee-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-gee-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-gee-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-gee-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-gee-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-gee-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-gee-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-gee-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-gee-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-gee-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-gee/badges/version.svg)](https://anaconda.org/conda-forge/r-gee)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-gee/badges/downloads.svg)](https://anaconda.org/conda-forge/r-gee)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--gee-green.svg)](https://anaconda.org/conda-forge/r-gee) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-gee.svg)](https://anaconda.org/conda-forge/r-gee) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-gee.svg)](https://anaconda.org/conda-forge/r-gee) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-gee.svg)](https://anaconda.org/conda-forge/r-gee) |
 
 Installing r-gee
 ================
