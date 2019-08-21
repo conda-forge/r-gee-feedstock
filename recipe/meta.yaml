@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: gee_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/gee_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gee/gee_{{ version }}.tar.gz
@@ -15,8 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1003
-  skip: true  # [win32]
+  number: 1004
   rpaths:
     - lib/R/lib/
     - lib/
@@ -53,8 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
