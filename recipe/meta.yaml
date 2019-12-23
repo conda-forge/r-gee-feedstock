@@ -1,4 +1,4 @@
-{% set version = '4.13-19' %}
+{% set version = "4.13-20" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gee_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gee/gee_{{ version }}.tar.gz
-  sha256: ebd3eb754b338dc8d89a35fff149af57c1be3aa2eb6162912c7cc52a8572c292
+  sha256: 53014cee059bd87dc22f9679dfbf18fe6813b9ab41dfe90361921159edfbf798
 
 build:
   merge_build_host: True  # [win]
-  number: 1004
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
