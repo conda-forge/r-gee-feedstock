@@ -1,4 +1,4 @@
-{% set version = "4.13-26" %}
+{% set version = "4.13-27" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gee_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gee/gee_{{ version }}.tar.gz
-  sha256: 9a8553b5ab51f3aa929ce80597b0b5cecd8a8bdb2ea3c578edd1c608c5c6438c
+  sha256: 3fb4773fd58fe6aa8bd0ae031add8ee7c33d0e43dfec92e89db04b5dc709a49c
 
 build:
   merge_build_host: true  # [win]
@@ -22,8 +22,10 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}        # [not win]
+    - {{ stdlib("c") }}          # [not win]
     - {{ compiler('fortran') }}  # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('m2w64_fortran') }}        # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
