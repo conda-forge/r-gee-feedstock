@@ -1,6 +1,5 @@
 {% set version = "4.13-27" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-gee
@@ -13,8 +12,7 @@ source:
   sha256: 3fb4773fd58fe6aa8bd0ae031add8ee7c33d0e43dfec92e89db04b5dc709a49c
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,7 +34,6 @@ requirements:
     - r-base
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
 
 test:
   commands:
