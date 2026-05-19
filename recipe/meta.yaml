@@ -3,7 +3,7 @@
 
 package:
   name: r-gee
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -12,7 +12,7 @@ source:
   sha256: e083efb0c1f7293a79d8fe35f90630fa34c8752d5a835cf0ea70560bf5c2ff94
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
